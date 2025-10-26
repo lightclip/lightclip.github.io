@@ -174,13 +174,74 @@
         <img src="static/images/motivation.png" alt="Research result visualization" loading="lazy" style="max-width: 100%; height: auto;"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          Motivations of the work.
+          Motivations(a) Some image-text pairs in YFCC15M-V2 dataset are many-to-many correspondence, indicating
+the one-hot label for instance-level alignment is sub-optimal; (b) Adopting only the objective of instance-level alignment usually
+results in the match failure between image patches and textual words; (c) Under the same text encoder (8-layer Transformer), the
+ImageNet zero-shot accuracy improves accordingly when Swin-Nano, Swin-Tiny, Swin-Small and Swin-Base are adopted
+as the image encoder, respectively. However, under the same image encoder (MobileNet-V2), the accuracy does not improve
+significantly when 4-layer, 8-layer, 12-layer and 16-layer Transformer, are adopted as the text encoder, respectively.
         </h2>
       </div>
     </div>
   </div>
 </section>
 <!-- End single image section -->
+
+
+<!-- Single image section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="has-text-centered">
+        <!-- TODO: Replace with your research result image -->
+        <img src="static/images/framework.png" alt="Research result visualization" loading="lazy" style="max-width: 100%; height: auto;"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          (a) Image and text encoder are each divided into multiple stages, the complete
+objective includes contrastive instance-level alignment, relaxed token-level alignment, and the enhanced MLM through imageto-text embedding fusion; (b) The embedding fusion module of unmasked image to masked text; (c) The progressive softened
+label utilized in contrastive instance-level alignment; (d) The objective of relaxed token-level alignment, where Sim(·, ·) is
+cosine similarity, Bi-Match is Bipartite-Matching algorithm for achieving the one-to-one match between image patches and
+textual words with the lowest matching cost. ”Relaxed” means only the paired image-text is involved for alignment.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End single image section -->
+                
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/cam-resnet-18.png" alt="First research result visualization" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          Visualization on the match between image patches and textual words of ResNet-18.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/cam-mv2.png" alt="Second research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Visualization on the match between image patches and textual words of MobileNet-V2.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/cam-swinn.png" alt="Third research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+         Visualization on the match between image patches and textual words of Swin-Nano.
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
                 
 
   <footer class="footer">
